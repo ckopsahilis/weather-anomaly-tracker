@@ -9,7 +9,7 @@ A serverless ETL pipeline and frontend dashboard designed to track extreme weath
 ## Features
 - **Data Ingestion**: Fetches real-time weather data from the [Open-Meteo API](https://open-meteo.com/).
 - **Data Transformation**: Filters data to detect weather anomalies (Temperature > 35°C or < -5°C, or Wind Speed > 30 km/h).
-- **Automated Workflow**: Uses GitHub Actions to run the ETL pipeline every 2 hours and continuously store historical CSV data in the repository.
+- **Automated Workflow**: Uses GitHub Actions to run the ETL pipeline every 8 hours and continuously store historical CSV data in the repository.
 - **Interactive Dashboard**: A dynamic Streamlit app to visualize trends and raw anomaly data.
 
 ## Architecture
@@ -23,7 +23,7 @@ graph TD
     D --> F[data/weather_anomalies.csv]
     
     subgraph GitHub Actions
-    G[Cron Schedule: Every 2 hrs] --> B
+    G[Cron Schedule: Every 8 hrs] --> B
     D -->|Commit & Push| G2[GitHub Repo]
     end
     

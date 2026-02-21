@@ -9,7 +9,7 @@ if hasattr(st, "auto_refresh"):
     st.auto_refresh(interval=600_000)
 
 st.title("Weather Anomaly Tracker")
-st.caption("Monitoring extreme weather across 6 global cities every 2 hours.")
+st.caption("Monitoring extreme weather across 6 global cities every 8 hours.")
 
 CSV_FILE = "data/weather_anomalies.csv"
 
@@ -24,7 +24,7 @@ def load_data():
 df = load_data()
 
 if df.empty:
-    st.info("No weather anomalies have been recorded yet. The pipeline checks every 6 hours.")
+    st.info("No weather anomalies have been recorded yet. The pipeline checks every 8 hours.")
 else:
     # ── Sidebar: simple filters ──────────────────────────────────────
     with st.sidebar:
