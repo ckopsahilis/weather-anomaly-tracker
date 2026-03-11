@@ -4,7 +4,7 @@ A serverless ETL pipeline and frontend dashboard designed to track extreme weath
 
 ## Dashboard Preview
 
-![Weather Anomaly Tracker UI](WeatherAnomalyTrackerUI.png)
+<img width="1845" height="879" alt="Image" src="https://github.com/user-attachments/assets/bfcfa21f-d187-4fa9-9177-3f851fed2ab9" />
 
 ## Features
 - **Data Ingestion**: Fetches real-time weather data from the [Open-Meteo API](https://open-meteo.com/).
